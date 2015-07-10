@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace JaggedArray.Task2
 {
-    enum orderby
-    {
-        ascending,
-        descending
-    }
-
     class JaggedArray
-    {       
+    {
+        public enum orderby
+        {
+            ascending,
+            descending
+        }
 
         private int[][] array;
         private ISort Sorting;
