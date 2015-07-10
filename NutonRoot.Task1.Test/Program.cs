@@ -14,8 +14,25 @@ namespace NutonRoot.Task1.Test
         static void Main(string[] args)
         {
             NutonCalc calc = new NutonCalc();
-            Console.WriteLine(calc.RootOf(2, 2, 0.00001));
-            Console.WriteLine(Math.Pow(2,0.5));
+            double arg;
+            double n;
+            double e;
+
+            Console.WriteLine("Your argument:");
+            double.TryParse(Console.ReadLine(), out arg);
+            Console.WriteLine("Your root power:");
+            double.TryParse(Console.ReadLine(), out n);
+            Console.WriteLine("Сalculation accuracy:");
+            double.TryParse(Console.ReadLine(), out e);
+
+            Console.WriteLine();
+            double nutonValue = calc.RootOf(arg, n, e);
+            Console.WriteLine("Calculating by Nuton method:"+nutonValue);
+            double powValue = Math.Pow(arg,(1/n));
+            Console.WriteLine("Calculating by Math.Pow metod:" + powValue);
+            Console.WriteLine();
+            Console.WriteLine("Сomputing difference: " + (powValue - nutonValue));
+
             Console.ReadLine();
         }
     }
