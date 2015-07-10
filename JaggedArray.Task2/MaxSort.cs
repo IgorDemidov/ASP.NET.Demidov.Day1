@@ -8,9 +8,10 @@ namespace JaggedArray.Task2
 {
     class MaxSort: ISort
     {
-        public override void Sort(int[][] arr)
+        public void Sort(int[][] arr, orderby order)
         {
-           
+
+
         }
         
         

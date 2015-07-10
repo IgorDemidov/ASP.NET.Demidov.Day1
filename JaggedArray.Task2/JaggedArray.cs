@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace JaggedArray.Task2
 {
-    class JaggedArray
+    enum orderby
     {
+        ascending,
+        descending
+    }
+
+    class JaggedArray
+    {       
+
         private int[][] array;
         private ISort Sorting;
 
@@ -21,9 +28,9 @@ namespace JaggedArray.Task2
             Sorting = sorting;
         }
 
-        public void Sort()
+        public void Sort(orderby order)
         {
-            Sorting.Sort(array);
+            Sorting.Sort(array, order);
         }
 
 

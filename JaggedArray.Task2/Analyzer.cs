@@ -8,5 +8,13 @@ namespace JaggedArray.Task2
 {
     class rowAnalyzer
     {
+        
+        private int[] targetIndexes;
+
+        public rowAnalyzer(JaggedArray jArr)
+        {
+
+        }
+
     }
 }

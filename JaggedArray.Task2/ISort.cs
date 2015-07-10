@@ -8,6 +8,6 @@ namespace JaggedArray.Task2
 {
     interface ISort
     {
-        void Sort(int[][] arr);
+        void Sort(int[][] arr, orderby order);
     }
 }
