@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutonRoot.Task1.Library", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutonRoot.Task1.Test", "NutonRoot.Task1.Test\NutonRoot.Task1.Test.csproj", "{E18DAF51-FB58-4B1D-ABEF-FB6BAD2AAB07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaggedArray.Task2", "JaggedArray.Task2\JaggedArray.Task2.csproj", "{2D67888B-D3B6-4D8A-AA9E-07749D562CA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E18DAF51-FB58-4B1D-ABEF-FB6BAD2AAB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E18DAF51-FB58-4B1D-ABEF-FB6BAD2AAB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E18DAF51-FB58-4B1D-ABEF-FB6BAD2AAB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D67888B-D3B6-4D8A-AA9E-07749D562CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D67888B-D3B6-4D8A-AA9E-07749D562CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D67888B-D3B6-4D8A-AA9E-07749D562CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D67888B-D3B6-4D8A-AA9E-07749D562CA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
