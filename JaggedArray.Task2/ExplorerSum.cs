@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace JaggedArray.Task2
 {
-    class ExplorerSum
+    class ExplorerSum : IRowExplorer
     {
+        public int Explore(int[] row)
+        {
+            int targetSum=row[0];
+            for (int i = 0; i < row.Length; i++)
+            {
+               targetSum +=row[i];  
+            }
+            return targetSum;
+        }
     }
 }

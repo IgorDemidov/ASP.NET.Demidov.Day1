@@ -46,10 +46,10 @@
     <Compile Include="ExplorerSum.cs" />
     <Compile Include="IRowExplorer.cs" />
     <Compile Include="ISort.cs" />
-    <Compile Include="JaggedArray.cs" />
+    <Compile Include="JaggedArraySorter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="JaggedRow.cs" />
+    <Compile Include="BubbleSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
