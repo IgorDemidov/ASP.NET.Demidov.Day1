@@ -18,7 +18,7 @@ namespace JaggedArray.Task2
                 new int[3] { 8, 13, 6}});
           
 
-            ja.Print();
+            //ja.Print();
             
 
             

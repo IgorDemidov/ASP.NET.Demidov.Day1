@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace JaggedArray.Task2
 {
-    class rowAnalyzer
+    interface IRowExplorer
     {
-        
-        private int[] targetIndexes;
-
-        public rowAnalyzer(JaggedArray jArr)
-        {
-
-        }
-
+        int Explore(int[] row);
     }
 }

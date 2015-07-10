@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace JaggedArray.Task2
 {
-    class MaxSort: ISort
+    class ExplorerSum
     {
-        public void Sort(int[][] arr, JaggedArray.orderby order)
-        {
-            
-
-        }
-        
-        
-
     }
 }

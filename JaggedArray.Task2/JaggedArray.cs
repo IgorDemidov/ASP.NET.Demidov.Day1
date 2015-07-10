@@ -14,12 +14,14 @@ namespace JaggedArray.Task2
             descending
         }
 
-        private int[][] array;
+        private JaggedRow[] array;
         private ISort Sorting;
+
 
         public JaggedArray(int[][] arr)
         {
-            array = arr;
+            	
+            
         }
 
         public void SetSorting(ISort sorting)
@@ -29,11 +31,11 @@ namespace JaggedArray.Task2
 
         public void Sort(orderby order)
         {
-            Sorting.Sort(array, order);
+           // Sorting.Sort(array, order);
         }
 
 
-
+/*
         public void Print()
         {
             for (int i = 0; i < array.Length; i++)
@@ -47,7 +49,7 @@ namespace JaggedArray.Task2
                 System.Console.WriteLine();
             }
         }
-
+*/
        
 
     }
