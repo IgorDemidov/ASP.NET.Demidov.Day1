@@ -16,19 +16,33 @@ namespace JaggedArray.Task2
                 new int[5] { 3, 16, 1, 7, 3 },
                 new int[6] { 1, 3, 6, 11, 5, 10 },
                 new int[3] { 8, 13, 6}};
-            JaggedArraySorter jas = new JaggedArraySorter(array, new BubbleSort(), new ExplorerSum());
-          
+            Console.WriteLine("В порядке возрастания максимальных элементов строк матрицы:");
+            JaggedArraySorter jas1 = new JaggedArraySorter(array, new BubbleSort(), new ExplorerMax(), true);
+            jas1.Print();
+            
+            Console.WriteLine("В порядке убывания максимальных элементов строк матрицы:");
+            JaggedArraySorter jas2 = new JaggedArraySorter(array, new BubbleSort(), new ExplorerMax(), false);
+            jas2.Print();
+
+            Console.WriteLine("В порядке возрастания минимальных элементов строк матрицы:");
+            JaggedArraySorter jas3 = new JaggedArraySorter(array, new BubbleSort(), new ExplorerMin(), true);
+            jas3.Print();
+
+            Console.WriteLine("В порядке убывания минимальных элементов строк матрицы:");
+            JaggedArraySorter jas4 = new JaggedArraySorter(array, new BubbleSort(), new ExplorerMin(), false);
+            jas4.Print();
+
+            Console.WriteLine("В порядке возрастания сумм элементов строк матрицы:");
+            JaggedArraySorter jas5 = new JaggedArraySorter(array, new BubbleSort(), new ExplorerSum(), true);
+            jas5.Print();
+
+            Console.WriteLine("В порядке убывания сумм элементов строк матрицы:");
+            JaggedArraySorter jas6 = new JaggedArraySorter(array, new BubbleSort(), new ExplorerSum(), false);
+            jas6.Print();
 
             
-            
-
-            
 
 
-
-            
-
-            Console.ReadKey();
 
         }
     }

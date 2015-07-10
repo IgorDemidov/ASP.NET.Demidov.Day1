@@ -8,7 +8,7 @@ namespace JaggedArray.Task2
 {
     interface ISort
     {
-        void Sort(int[][] arr, int[] rowsTargets);
+        void Sort(int[][] arr, int[] rowsTargets, bool ascending);
        
     }
 }
