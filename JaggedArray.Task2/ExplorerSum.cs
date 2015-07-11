@@ -10,7 +10,7 @@ namespace JaggedArray.Task2
     {
         public int Explore(int[] row)
         {
-            int targetSum=row[0];
+            int targetSum = 0;
             for (int i = 0; i < row.Length; i++)
             {
                targetSum +=row[i];  
