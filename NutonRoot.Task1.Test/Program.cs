@@ -13,22 +13,22 @@ namespace NutonRoot.Task1.Test
     {   
         static void Main(string[] args)
         {
-            NutonCalc calc = new NutonCalc();
             double arg;
-            double n;
+            int n;
             double e;
 
             Console.WriteLine("Your argument:");
             double.TryParse(Console.ReadLine(), out arg);
             Console.WriteLine("Your root power:");
-            double.TryParse(Console.ReadLine(), out n);
+            int.TryParse(Console.ReadLine(), out n);
             Console.WriteLine("Сalculation accuracy:");
             double.TryParse(Console.ReadLine(), out e);
 
+            
             Console.WriteLine();
-            double nutonValue = calc.RootOf(arg, n, e);
+            double nutonValue = NutonRoot.Task1.Library.NutonCalc.RootOf(arg, n, e);
             Console.WriteLine("Calculating by Nuton method:"+nutonValue);
-            double powValue = Math.Pow(arg,(1/n));
+            double powValue = Math.Pow(arg,(1/(double)n));
             Console.WriteLine("Calculating by Math.Pow metod:" + powValue);
             Console.WriteLine();
             Console.WriteLine("Сomputing difference: " + (powValue - nutonValue));
