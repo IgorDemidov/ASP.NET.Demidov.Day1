@@ -10,10 +10,10 @@ namespace JaggedArray.Task2
     {
         public int Explore(int[] row)
         {
-            int targetMin = row[1];
+            int targetMin = row[0];
             for (int i = 1; i < row.Length; i++)
             {
-                if (row[i - 1] > row[i])
+                if (targetMin > row[i])
                 {
                     targetMin = row[i];
                 }

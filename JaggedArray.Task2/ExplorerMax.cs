@@ -10,12 +10,12 @@ namespace JaggedArray.Task2
     {   
         public int Explore(int[] row)
         {
-            int targetMax = row[1];
+            int targetMax = row[0];
             for (int i = 1; i < row.Length; i++)
             {
-                if (row[i-1]<row[i])
+                if (targetMax < row[i])
                 {
-                    targetMax=row[i];
+                    targetMax = row[i];
                 }    
             }
             return targetMax;    

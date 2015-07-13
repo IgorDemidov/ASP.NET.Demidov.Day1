@@ -15,9 +15,10 @@ namespace JaggedArray.Task2
 
             for (int j = 0; j < RowsTargets.Length - 1; j++)
             {
-                for (int i = 0; i < RowsTargets.Length - j - 1; i++)
+                for (int i = 0; i 
+                    < RowsTargets.Length - j - 1; i++)
                 {
-                    if (((RowsTargets[i] > RowsTargets[i + 1])&&ascending)&&(RowsTargets[i] != RowsTargets[i + 1]))
+                    if (((RowsTargets[i] > RowsTargets[i + 1])==ascending)&&(RowsTargets[i] != RowsTargets[i + 1]))
                     {
                         targetTemp = RowsTargets[i];
                         arrTemp=arr[i];
