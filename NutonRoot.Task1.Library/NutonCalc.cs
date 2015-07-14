@@ -23,6 +23,11 @@ namespace NutonRoot.Task1.Library
                 throw new ArgumentOutOfRangeException("n", "The calculation of the infinite power of argument");
             }
 
+            if (accuracy < 0)
+            {
+                throw new ArgumentOutOfRangeException("accuracy", "Ipossible accuracy value");
+            }
+
             double x = arg;
             double next = x;
             do
